@@ -18,6 +18,7 @@ namespace recursivetree
         {
             InitializeComponent();
             this.BackColor = Color.Black;
+           
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -30,7 +31,7 @@ namespace recursivetree
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
-            drawTree(700, 550, -90.0, (int)numericUpDown1.Value, 15F, 10);
+            drawTree(700, 550, -90.0, (int)numericUpDown1.Value, 15F, (int)numericUpDown2.Value);
         }
         private void drawTree(float x1, float y1, double theta, int depth, double dtheta, float scale)
         {
@@ -52,6 +53,11 @@ namespace recursivetree
         }
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+            Invalidate();
+        }
+
+        private void numericUpDown2_ValueChanged(object sender, EventArgs e)
         {
             Invalidate();
         }
