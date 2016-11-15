@@ -30,7 +30,7 @@ namespace recursivetree
 
         private void Form1_Paint(object sender, PaintEventArgs e)
         {
-            drawTree(700, 550, -90.0, 9, 15F, 10);
+            drawTree(700, 550, -90.0, (int)numericUpDown1.Value, 15F, 10);
         }
         private void drawTree(float x1, float y1, double theta, int depth, double dtheta, float scale)
         {
@@ -49,6 +49,11 @@ namespace recursivetree
 
                 }
 
+        }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+            Invalidate();
         }
     }
 }

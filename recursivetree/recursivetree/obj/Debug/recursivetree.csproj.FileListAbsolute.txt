@@ -16,3 +16,12 @@ C:\Users\Linguistico\Desktop\recursivetree\recursivetree\obj\Debug\recursivetree
 C:\Users\Linguistico\Desktop\recursivetree\recursivetree\obj\Debug\recursivetree.Form1.resources
 C:\Users\Linguistico\Desktop\recursivetree\recursivetree\obj\Debug\recursivetree.Properties.Resources.resources
 C:\Users\Linguistico\Desktop\recursivetree\recursivetree\obj\Debug\recursivetree.csproj.GenerateResource.Cache
+C:\Users\cad\Desktop\git\davide_marchiori\recursivetree\recursivetree\bin\Debug\recursivetree.exe.config
+C:\Users\cad\Desktop\git\davide_marchiori\recursivetree\recursivetree\obj\Debug\recursivetree.exe
+C:\Users\cad\Desktop\git\davide_marchiori\recursivetree\recursivetree\obj\Debug\recursivetree.pdb
+C:\Users\cad\Desktop\git\davide_marchiori\recursivetree\recursivetree\bin\Debug\recursivetree.exe
+C:\Users\cad\Desktop\git\davide_marchiori\recursivetree\recursivetree\bin\Debug\recursivetree.pdb
+C:\Users\cad\Desktop\git\davide_marchiori\recursivetree\recursivetree\obj\Debug\recursivetree.csprojResolveAssemblyReference.cache
+C:\Users\cad\Desktop\git\davide_marchiori\recursivetree\recursivetree\obj\Debug\recursivetree.Form1.resources
+C:\Users\cad\Desktop\git\davide_marchiori\recursivetree\recursivetree\obj\Debug\recursivetree.Properties.Resources.resources
+C:\Users\cad\Desktop\git\davide_marchiori\recursivetree\recursivetree\obj\Debug\recursivetree.csproj.GenerateResource.Cache
