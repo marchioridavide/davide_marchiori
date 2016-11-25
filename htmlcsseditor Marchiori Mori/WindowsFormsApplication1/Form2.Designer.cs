@@ -54,7 +54,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Gray;
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(103, 113);
+            this.button1.Location = new System.Drawing.Point(100, 113);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(160, 41);
             this.button1.TabIndex = 3;
@@ -123,7 +123,7 @@
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "Begin";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
             this.Load += new System.EventHandler(this.Form2_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form2_KeyDown);

@@ -47,3 +47,6 @@ C:\Users\aula10\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\De
 C:\Users\aula10\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form2.resources
 C:\Users\aula10\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
 C:\Users\aula10\Desktop\WindowsFormsApplication1\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\pc\Desktop\git\davide_marchiori\htmlcsseditor Marchiori Mori\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\pc\Desktop\git\davide_marchiori\htmlcsseditor Marchiori Mori\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\pc\Desktop\git\davide_marchiori\htmlcsseditor Marchiori Mori\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
