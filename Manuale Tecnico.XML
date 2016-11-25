@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WindowsFormsApplication1</name>
+    </assembly>
+    <members>
+        <member name="M:WindowsFormsApplication1.Form1.Form1_Load(System.Object,System.EventArgs)">
+            <summary>
+            if an old file is opened, the program loads the content and write them into textboxes
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <!-- Commento XML in formato non corretto ignorato per il membro "M:WindowsFormsApplication1.Form1.pictureBox4_Click(System.Object,System.EventArgs)" -->
+        <member name="M:WindowsFormsApplication1.Form1.pictureBox5_Click(System.Object,System.EventArgs)">
+            <summary>
+            if the user wants to quit without saving the html and css files will be removed 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:WindowsFormsApplication1.Form1.pictureBox3_Click(System.Object,System.EventArgs)">
+            <summary>
+            try to open a bigger browser
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <!-- Commento XML in formato non corretto ignorato per il membro "M:WindowsFormsApplication1.Form1.HTMLchanged" -->
+        <member name="M:WindowsFormsApplication1.Form1.CSSchanged">
+            <summary>
+            when the css textbox text is changed the program doesn't need to add the html tags because the html file will be the same
+            </summary>
+        </member>
+        <member name="F:WindowsFormsApplication1.Form1.components">
+            <summary>
+            Variabile di progettazione necessaria.
+            </summary>
+        </member>
+        <member name="M:WindowsFormsApplication1.Form1.Dispose(System.Boolean)">
+            <summary>
+            Liberare le risorse in uso.
+            </summary>
+            <param name="disposing">ha valore true se le risorse gestite devono essere eliminate, false in caso contrario.</param>
+        </member>
+        <member name="M:WindowsFormsApplication1.Form1.InitializeComponent">
+            <summary>
+            Metodo necessario per il supporto della finestra di progettazione. Non modificare
+            il contenuto del metodo con l'editor di codice.
+            </summary>
+        </member>
+        <member name="F:WindowsFormsApplication1.Form2.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:WindowsFormsApplication1.Form2.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:WindowsFormsApplication1.Form2.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:WindowsFormsApplication1.Program.Main">
+            <summary>
+            Punto di ingresso principale dell'applicazione.
+            </summary>
+        </member>
+        <member name="T:WindowsFormsApplication1.Properties.Resources">
+            <summary>
+              Classe di risorse fortemente tipizzata per la ricerca di stringhe localizzate e così via.
+            </summary>
+        </member>
+        <member name="P:WindowsFormsApplication1.Properties.Resources.ResourceManager">
+            <summary>
+              Restituisce l'istanza di ResourceManager nella cache utilizzata da questa classe.
+            </summary>
+        </member>
+        <member name="P:WindowsFormsApplication1.Properties.Resources.Culture">
+            <summary>
+              Esegue l'override della proprietà CurrentUICulture del thread corrente per tutte
+              le ricerche di risorse che utilizzano questa classe di risorse fortemente tipizzata.
+            </summary>
+        </member>
+    </members>
+</doc>
