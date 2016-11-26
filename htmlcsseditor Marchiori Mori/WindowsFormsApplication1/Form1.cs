@@ -45,7 +45,7 @@ namespace WindowsFormsApplication1
              if (Form2.fileopen)
             {
                 textBox1.Text = "";
-                textBox1.Text = File.ReadAllText(dir.Replace(".html", ".txt"));
+                textBox1.Text = File.ReadAllText(dir.Replace(".html",".txt"));
                 textBox2.Text = File.ReadAllText(dircss);
             }
         }
@@ -80,7 +80,7 @@ namespace WindowsFormsApplication1
             string rec = dir.Replace(".html", ".txt");
             using (System.IO.File.Create(rec)) { };
             File.WriteAllText(rec, textBox1.Text);
-            this.Close();
+            pictureBox4.BackColor = Color.Blue;
         }
 
 
@@ -94,14 +94,17 @@ namespace WindowsFormsApplication1
         /// <param name="e"></param>
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Do you want to exit and delete files?", "htmlcsseditor",MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (pictureBox4.BackColor != Color.Blue)
             {
-                try
+                if (MessageBox.Show("Do you want to exit ? All unsaved progress will be lost", "htmlcsseditor", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-                    File.Delete(dir);
-                    File.Delete(dircss);
+
+
+                    this.Close();
                 }
-                catch { }
+            }
+            else
+            {
                 this.Close();
             }
             
@@ -140,6 +143,7 @@ namespace WindowsFormsApplication1
             file.WriteLine("<html><link href=\"" + dircss + "\" rel=\"stylesheet\" type=\"text/css\">" + textBox1.Text + "</html>");
             file.Close();
             webBrowser1.Navigate(dir);
+            pictureBox4.BackColor = Color.Transparent;
         }
         /// <summary>
         /// when the css textbox text is changed the program doesn't need to add the html tags because the html file will be the same
@@ -151,8 +155,12 @@ namespace WindowsFormsApplication1
             file.WriteLine(textBox2.Text);
             file.Close();
             webBrowser1.Navigate(dir);
+            pictureBox4.BackColor = Color.Transparent;
         }
         #endregion
+
+    
+      
 
 
     }
