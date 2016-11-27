@@ -42,11 +42,23 @@ namespace WindowsFormsApplication1
             }
             this.dir = Form2.dir;
             this.dircss = Form2.dircss;
-             if (Form2.fileopen)
+             if (Form2.fileopen&&dir.Contains(@"C:\htmlcsseditor"))
             {
                 textBox1.Text = "";
                 textBox1.Text = File.ReadAllText(dir.Replace(".html",".txt"));
                 textBox2.Text = File.ReadAllText(dircss);
+            }
+             else if (Form2.fileopen && !dir.Contains(@"C:\htmlcsseditor"))
+            {
+                textBox1.Text = File.ReadAllText(dir);
+                try
+                {
+                    textBox2.Text = File.ReadAllText(dircss);
+                }
+                catch
+                {
+                    textBox2.Enabled = false;
+                }
             }
         }
 
@@ -77,9 +89,12 @@ namespace WindowsFormsApplication1
         /// <param name="e"></param>
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            string rec = dir.Replace(".html", ".txt");
-            using (System.IO.File.Create(rec)) { };
-            File.WriteAllText(rec, textBox1.Text);
+            if (dir.Contains(@"C:\htmlcsseditor"))
+            {
+                string rec = dir.Replace(".html", ".txt");
+                using (System.IO.File.Create(rec)) { };
+                File.WriteAllText(rec, textBox1.Text);
+            }
             pictureBox4.BackColor = Color.Blue;
         }
 
@@ -98,8 +113,6 @@ namespace WindowsFormsApplication1
             {
                 if (MessageBox.Show("Do you want to exit ? All unsaved progress will be lost", "htmlcsseditor", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
-
-
                     this.Close();
                 }
             }
@@ -140,7 +153,14 @@ namespace WindowsFormsApplication1
         {
             System.IO.File.WriteAllText(dir, string.Empty);
             file = new System.IO.StreamWriter(dir);
-            file.WriteLine("<html><link href=\"" + dircss + "\" rel=\"stylesheet\" type=\"text/css\">" + textBox1.Text + "</html>");
+            if (dir.Contains(@"C:\htmlcsseditor"))
+            {
+                file.WriteLine("<html><link href=\"" + dircss + "\" rel=\"stylesheet\" type=\"text/css\">" + textBox1.Text + "</html>");
+            }
+            else if (!dir.Contains(@"C:\htmlcsseditor"))
+            {
+                file.WriteLine(textBox1.Text );
+            }
             file.Close();
             webBrowser1.Navigate(dir);
             pictureBox4.BackColor = Color.Transparent;
