@@ -23,7 +23,14 @@ namespace WindowsFormsApplication1
 
             InitializeComponent();
             new Form2().ShowDialog();
-           
+            textBox1.ScrollBars = ScrollBars.Both;
+            textBox1.WordWrap = false;
+            textBox2.ScrollBars = ScrollBars.Both;
+            textBox2.WordWrap = false;
+            pictureBox4.Cursor = Cursors.Hand;
+            pictureBox5.Cursor = Cursors.Hand;
+            pictureBox3.Cursor = Cursors.Hand;
+
         }
 
 

@@ -24,6 +24,8 @@ namespace WindowsFormsApplication1
         {
            
             InitializeComponent();
+            pictureBox1.Cursor = Cursors.Hand;
+            pictureBox2.Cursor = Cursors.Hand;
         }
 
         private void folderBrowserDialog1_HelpRequest(object sender, EventArgs e)
